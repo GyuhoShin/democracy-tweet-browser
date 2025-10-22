@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 약간의 폴리시 */
+html, body, #root { height: 100%; }
+body { @apply bg-gray-50 text-gray-900 antialiased; }
+
+/* 스크롤바 살짝 얇게 */
+*::-webkit-scrollbar { width: 10px; height: 10px; }
+*::-webkit-scrollbar-thumb { background: #d4d4d8; border-radius: 9999px; }
+*::-webkit-scrollbar-thumb:hover { background: #a1a1aa; }
