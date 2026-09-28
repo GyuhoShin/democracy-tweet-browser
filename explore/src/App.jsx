@@ -3,10 +3,10 @@ import Papa from "papaparse";
 
 // Single-dataset browser for Democracy_final_raw_data_clean_no_outliers.csv
 // Expected headers: Cluster, Topic, Date, Clean, Impact_Factor
-// Host the CSV in your public/ folder so it is served at
+// Store the CSV in ../data/; Vite serves that directory at
 // ./Democracy_final_raw_data_clean_no_outliers.csv
 //
-// Optional mapping files in public/:
+// Optional mapping files in ../data/:
 //  - cluster_labels.csv  (columns: Cluster, Cluster_Title)
 //  - topic_labels.csv    (columns: Topic, Topic_Title)
 // If present, the UI renders labels as "<id>: <title>".
