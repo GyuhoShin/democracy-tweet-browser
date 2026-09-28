@@ -1,16 +1,25 @@
-# React + Vite
+# Democracy Tweets Dataset
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Authors: Gyuho Shin, Yoonyoung Na, and Woo-Yeon Jung
 
-Currently, two official plugins are available:
+This repository provides data for a study of democracy-related discourse on Twitter. The tweets are written in Korean. The manuscript is currently being prepared for submission.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The browser displays 166,295 cleaned tweets from 2017–2022, classified into 9 clusters and 2,420 topics.
 
-## React Compiler
+[Explore the tweets](https://gyuhoshin.github.io/democracy-tweet-browser/)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Data files
 
-## Expanding the ESLint configuration
+The files are stored in [data/](data/).
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- `Democracy_final_raw_data_clean_no_outliers.csv`: Analytical tweet data.
+- `cluster_labels.csv`: Cluster names.
+- `topic_labels.csv`: Topic names.
+
+The tweet data include cleaned text, date, cluster, topic, and "impact factor". The browser supports keyword searches, date filtering, and browsing by cluster and topic.
+
+The "impact factor" is the retweet count divided by the number of tweets in the corresponding topic over a 24-hour period. It can be interpreted as relative retweet volume.
+
+For the detailed methodology, please refer to the paper once it is published.
+
+The explorer source code and development instructions are in [explore/](explore/).
